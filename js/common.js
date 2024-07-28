@@ -30,6 +30,6 @@ function changeBackground() {
 changeBackground();
 getClock();
 
-// 5분(300000ms)마다 배경 변경
-document.addEventListener("DOMContentLoaded", setRandomBackground);
 setInterval(getClock, 1000);
+
+document.addEventListener("DOMContentLoaded", setRandomBackground);
