@@ -1,1 +1,71 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div id="background"></div>
+    <div class="commonHeader">
+      <div class="category-icon">&#9776;</div>
+      <div class="title-container">
+        <h2 class="title">JSJ-Web</h2>
+      </div>
+      <div class="weather-clock-container">
+        <h2 class="weather"></h2>
+        <h2 id="clock"></h2>
+      </div>
+    </div>
+    <div class="user-container">
+      <form id="logIn" class="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+          class="login-input"
+        />
+        <input type="submit" value="Log In" class="login-button" />
+      </form>
+      <div id="userInfo" class="hidden">
+        <h2 id="name" class="greeting"></h2>
+        <button id="logoutButton" class="logout-button">Log Out</button>
+      </div>
+    </div>
+    <div class="Weekly-todo-container">
+      <div class="todo-container yesterday">
+        <div class="todo-header">
+          <h3 class="date"></h3>
+          <button class="add-task">+</button>
+        </div>
+        <div class="tasks-container">
+          <ul class="tasks"></ul>
+        </div>
+      </div>
+      <div class="todo-container today">
+        <div class="todo-header">
+          <h3 class="date"></h3>
+          <button class="add-task">+</button>
+        </div>
+        <div class="tasks-container">
+          <ul class="tasks"></ul>
+        </div>
+      </div>
+      <div class="todo-container tomorrow">
+        <div class="todo-header">
+          <h3 class="date"></h3>
+          <button class="add-task">+</button>
+        </div>
+        <div class="tasks-container">
+          <ul class="tasks"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/logIn.js"></script>
+    <script src="js/toDoList.js"></script>
+    <script type="module" src="js/weather.js"></script>
+  </body>
+</html>
