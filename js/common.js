@@ -32,4 +32,4 @@ getClock();
 
 setInterval(getClock, 1000);
 
-document.addEventListener("DOMContentLoaded", setRandomBackground);
+document.addEventListener("DOMContentLoaded", changeBackground);

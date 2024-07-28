@@ -135,4 +135,3 @@ document.addEventListener("DOMContentLoaded", () => {
 window.displayTodos = displayTodos;
 window.clearTodos = clearTodos;
 window.toggleAddTaskButtons = toggleAddTaskButtons;
-ㅍ;
